@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "portugal-fuel-ev": {
+      "command": "python",
+      "args": ["-m", "portugal_fuel_ev_mcp.server"]
+    }
+  }
+}
