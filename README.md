@@ -1,5 +1,7 @@
 # portugal-fuel-ev-mcp
 
+<!-- mcp-name: io.github.ThiagoJacobLannes/portugal-fuel-ev-mcp -->
+
 MCP server that answers "where is the cheapest place to fill up / charge near me in Portugal?", for combustion cars and electric cars, so Claude (or any MCP client) can look it up from official open data.
 
 **Read-only, no keys, no account.** Fuel prices come from DGEG's official price site; EV chargers, live status and prices come from the MOBI.E network feeds on Portugal's National Access Point. Not affiliated with DGEG, MOBI.E or IMT.
@@ -51,6 +53,16 @@ The prices are the `rates` that the MOBI.E status feed publishes for each chargi
 Every `ev_chargers` and `ev_charger_detail` result carries this note (`price_note`). Use the prices to compare chargers, and check the operator's app or your provider for the final cost.
 
 ## Install
+
+**Quickest** (needs [uv](https://docs.astral.sh/uv/)): no clone needed, it runs straight from PyPI.
+
+```bash
+claude mcp add portugal-fuel-ev -- uvx portugal-fuel-ev-mcp
+```
+
+For Claude Desktop, use `"command": "uvx", "args": ["portugal-fuel-ev-mcp"]`.
+
+**From source:**
 
 Requires Python 3.10+.
 
