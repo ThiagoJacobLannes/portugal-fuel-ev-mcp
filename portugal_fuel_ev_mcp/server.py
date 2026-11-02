@@ -243,6 +243,7 @@ async def ev_charger_detail(
 
 
 def main() -> None:
+    log.warning("portugal-fuel-ev-mcp is deprecated and gets no more updates: use portugal-mcp instead (uvx portugal-mcp; PORTUGAL_MCP_FEATURES=energia loads only this part).")
     ap = argparse.ArgumentParser(prog="portugal-fuel-ev-mcp", description=__doc__)
     ap.add_argument(
         "--refresh",
