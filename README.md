@@ -2,6 +2,10 @@
 
 <!-- mcp-name: io.github.ThiagoJacobLannes/portugal-fuel-ev-mcp -->
 
+> [!WARNING]
+> **Deprecated — use [portugal-mcp](https://github.com/ThiagoJacobLannes/portugal-mcp) instead.** This server now lives on as the `energia` feature of portugal-mcp, together with IPMA weather, INE, Banco de Portugal, Parliament, public contracts and more. Install with `uvx portugal-mcp` (add `PORTUGAL_MCP_FEATURES=energia` to load only this part). Tool names: all tool names are unchanged. This repository gets no further updates.
+
+
 MCP server that answers "where is the cheapest place to fill up / charge near me in Portugal?", for combustion cars and electric cars, so Claude (or any MCP client) can look it up from official open data.
 
 **Read-only, no keys, no account.** Fuel prices come from DGEG's official price site; EV chargers, live status and prices come from the MOBI.E network feeds on Portugal's National Access Point. Not affiliated with DGEG, MOBI.E or IMT.
